@@ -1,1 +1,1 @@
-web: python server.py --port 5000
+web: python server.py

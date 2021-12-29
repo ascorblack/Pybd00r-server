@@ -166,7 +166,9 @@ class Server:
 
 if __name__ == '__main__':
     # os.environ["PORT"] = "5000"
-    server = Server("0.0.0.0", int(os.environ.get('PORT', 5000)))
+    port = int(os.environ.get('PORT', 80))
+    print(port)
+    server = Server("0.0.0.0", port)
     server.run()
 
 
