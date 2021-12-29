@@ -1,4 +1,5 @@
 import asyncio
+import os
 import socket
 import json
 import signal
@@ -164,6 +165,7 @@ class Server:
 
 
 if __name__ == '__main__':
+    os.environ["PORT"] = "5000"
     server = Server("0.0.0.0", 5000)
     server.run()
 
